@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* UNiversal selector  */
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        /* Type selector */
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0;
+            font-weight: 100;
+        }
+        /* Class selector */
+        .txtcolor{
+            color: brown;
+        }
+        /* ID selector */
+        #para{
+            color: blue;
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px;
+        }
+        /* Attribute selector */
+        [type="text"]{
+            border: 4px dashed blue;
+            padding: 5px;
+        }
+        [type="submit"]{
+            background-color: #3842af;
+            color: #c0e4ec;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* Descendant selector */
+        article p{
+            color: #521c1c;
+            background-color: #d39f9f;
+            font-style: italic;
+        }
+        /* Child selector */
+        ul > li{
+            background-color: #c0e4ec;
+            margin: 10px;
+        }
+        /* Adjacent sibling selector */
+        h2 + p{
+            font-weight: bold;
+            color: #860303;
+            background-color: beige;
+        }
+        /* General sibling selector */
+        h1 ~ p{
+            background-color: blanchedalmond;
+            color: #1d7d3f;
+        }
+        /* Pseudo-class selector */
+        a:hover{
+            color: #f8f5f5;
+            text-decoration: none;
+            padding: 5px;
+            margin: 10px;
+            background-color: #3842af;
+        }
+        /* a:first-child{
+            background-color: #d40fc7;
+            color: #d39f9f;
+            text-decoration: none;
+        } */
+        /* Pseudo-element selector */
+        div>p::first-letter{
+            font-size: larger;
+            font-weight: bold;
+        }
+        /* Grouping selector */
+        h1,h2{
+            color: #1c686d;
+            text-decoration: wavy underline;
+        }
+        li,h3{
+            margin: 10px;
+            padding: 5px;
+            text-decoration: line-through;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Welcom to my web page</h1>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aut nobis veritatis, cum rerum, unde, modi labore delectus enim sequi dolorem quisquam neque incidunt. Nisi numquam mollitia nobis accusamus similique.</p>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus iure nihil aperiam ipsam veniam rem velit eveniet soluta est quasi sunt, quisquam, perferendis, cum nulla!</p>
+        
+    </div>
+    <article>
+        <p class="txtcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ad?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam vel, laudantium vitae repudiandae ducimus nulla fugiat delectus quaerat!</p>
+        <div>
+            <p>Descendant Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+    </article>
+    <ul>
+        <li>Child 1</li>
+        <li>Child 2</li>
+        <ol>
+            <li>Subchild 1</li>
+        </ol>
+        <li>Child 3</li>
+    </ul>
+    <input type="text" name="user" id="user" placeholder="Enter your name">
+    <input type="email" name="email" id="email" placeholder="Enter your email">
+    <input type="submit" value="Click Me">
+<button type="submit"> Submit</button>
+    <h2>Heading 2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, architecto, facilis totam molestias veniam aspernatur ipsa voluptate repellendus natus et dolore atque, non deleniti laudantium. Est, id cupiditate?</p>
+    <a href="#">Hover to see the effect
+        <p>first child</p>
+        <button>second child</button>
+    </a>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, alias aperiam!</p>
+    </div>
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatum.</p>
+</body>
+</html>
