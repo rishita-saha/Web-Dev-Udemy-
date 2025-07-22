@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, #1e2e32, #3e536c); */
+    line-height: 0.5;
+}
+.container{
+    display: flex;
+    background-image: url("../../images/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: rgba(207, 228, 233,0.8);
+    color: #161435;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 10%;
+}
+
+.image img {
+    width: 400px;
+    /* height: 50%; */
+    border: 2px solid white;
+    border-radius: 10%;
+}
+.actions button{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.actions .buy{
+    background-color: #8c02ef;
+}
+.actions .buy:hover{
+    background-color: #451562;
+}
+
+.actions .cart{
+    background-color: #f907d5;
+}
+.actions .cart:hover{
+    background-color: #b11f9e;
+}
