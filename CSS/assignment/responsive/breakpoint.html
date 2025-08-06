@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            color: aliceblue;
+        }
+        .responsive-div{
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            font-size: 25px;
+            background-color: rgb(85, 132, 147);
+        }
+         @media (max-width: 600px) {
+            body{
+                align-items: flex-start;
+            }
+            
+            .responsive-div {
+                background-color: rgb(129, 79, 230);
+                
+            }
+        }
+           @media (min-width: 601px) and (max-width: 1024px) {
+            body{
+                align-items: center;
+            }
+            
+            .responsive-div {
+                background-color: rgb(230, 79, 207);
+                
+            } 
+         }
+    </style> 
+</head>
+<body>
+    <div class="responsive-div">
+        this div changes color on the screen size
+    </div>
+</body>
+</html>
