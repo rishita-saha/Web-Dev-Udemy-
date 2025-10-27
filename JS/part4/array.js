@@ -64,6 +64,8 @@ popularTeas.pop();
 
 let topCities = ["Berlin", "Singapore", "New York"];
 let hardCopyCities = [...topCities];
+//let hardCopyCities = topCities.slice();
+
 topCities.pop();
 // console.log(hardCopyCities);
 // console.log(topCities);
