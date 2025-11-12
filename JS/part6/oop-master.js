@@ -18,5 +18,16 @@ let john = new Person("John", 20);
 // console.log(john.name);
 
 function Animal(type){
-    
+this.type = type;
 }
+
+Animal.prototype.speak = function(){
+    return `${this.type} makes a sound`
+}
+
+Array.prototype.titli = function(){
+    return `Custom method ${this}`;
+}
+
+let myArray = [1,2,3];
+console.log(myArray.titli());
