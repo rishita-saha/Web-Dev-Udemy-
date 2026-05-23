@@ -9,7 +9,7 @@ user.lastName = "Saha";
 
 // console.log(user["first Name"]);
 // console.log(user.lastName);
-// console.log(user);
+console.log(user);
 // console.log(typeof user);
 
 let today = new Date();
