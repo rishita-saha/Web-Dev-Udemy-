@@ -39,5 +39,43 @@ document.getElementById("removeLastTask").addEventListener('click',function(){
     let lt = document.getElementById("taskList");
     //lt.remove();    //to remove whole list
     lt.lastElementChild.remove();   //remove last elemnet
+
+})
+
+//example 6
+document.getElementById("clickMeButton").addEventListener(/*'click''mouseover'*/'dblclick',function(){
+    alert("Heyyyyy!!!!!!")
+})
+
+//example 7
+document.getElementById("teaList")
+.addEventListener('click',function(event){
+    //console.log(event.target)
+    if(event.target && event.target.matches('.teaItem')){
+        alert("You selected: " + event.target.textContent)
+    }
+})
+
+//example 8
+document.getElementById("feedbackForm")
+.addEventListener('submit',function(event){
+    //alert("Submitted!")
+    event.preventDefault();     //block from submit empty
+    let fb = document.getElementById("feedbackInput").value;
+    console.log(fb.textContent);
+    document.getElementById("feedbackDisplay").textContent = `Feedback is: ${fb}`
+})
+
+//example 9
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById("domStatus").textContent = "DOM is fully loaded"
+})
+
+
+//example 10
+document.getElementById("toggleHighlight").addEventListener('click',function(){
+    let a = document.getElementById("descriptionText");
+    //a.classList.add("highlight");     //add highlight to the text
+    a.classList.toggle("highlight");     //toggle highlight when click
     
 })
